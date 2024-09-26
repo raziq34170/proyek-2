@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, nilai, jumlah = 0;
+
+    // Meminta input jumlah bilangan yang akan dimasukkan
+    cout << "Masukkan banyak nilai: ";
+    cin >> n;
+
+    // Loop untuk menerima input bilangan dan menghitung jumlah bilangan genap
+    for (int i = 1; i <= n; i++) {
+        cout << "Masukkan Nilai ke-" << i << ": ";
+        cin >> nilai;
+        
+        // Cek apakah bilangan genap, jika iya, tambahkan ke jumlah
+        if (nilai % 2 == 0) {
+            jumlah += nilai;
+        }
+    }
+
+    // Tampilkan hasil penjumlahan bilangan genap
+    cout << "Jumlahnya adalah " << jumlah << endl;
+
+    return 0;
+}
